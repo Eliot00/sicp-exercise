@@ -1,0 +1,10 @@
+(define (make-accumulator num)
+  (define (accumulator n)
+    (set! num (+ num n))
+    num)
+  accumulator)
+
+(define A (make-accumulator 5))
+(A 10)
+(A 10)
+(display (A 10))
