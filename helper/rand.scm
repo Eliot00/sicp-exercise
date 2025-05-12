@@ -1,6 +1,8 @@
 (define-module (helper rand)
   #:export (random-init rand-update monte-carlo))
 
+(use-modules (rnrs arithmetic fixnums))
+
 (define random-init 1)
 
 (define random-max #x7fffffff)
